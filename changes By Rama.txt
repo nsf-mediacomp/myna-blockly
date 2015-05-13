@@ -1,0 +1,8 @@
+Commented dictation grammar in Myna
+Added setting properties code to Myna
+
+Added dynamic <component> commands to the component_grammarfile
+
+added next property to the navigation grammar.
+
+

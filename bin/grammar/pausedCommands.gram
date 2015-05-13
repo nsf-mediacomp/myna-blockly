@@ -1,0 +1,8 @@
+#JSGF V1.0;
+grammar javax.speech.demo;
+
+
+public <resume> = resume;
+
+
+

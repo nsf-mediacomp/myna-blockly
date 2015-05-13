@@ -1,0 +1,56 @@
+6/13/12
+- Added clickable components (blocks)
+  - Added components to grammar file
+  - Added corresponding property files
+
+6/14/12
+- Added pause command
+  - Added pause to list of actions in iCommandParser.java
+  - Added pause to grammar in defaultCommands.java
+  - Added pause method to CommandExecutor.java
+  - Edited classifyCommands method in CommandParser.java to test if filteredCommand = ipCommand indicating a single word command (no component)
+  - Added if statement to performAction method in Myna.java to catch the pause command as it is not associated with a property file
+  
+6/21/12
+- Added commands: Edit menu, Share menu, Help menu, Pen, and Sensing
+
+6/28/12
+- Added commands: Operators
+- Modified properties for commands requiring two parameters. Added: 
+		initialPropertyPointX2
+		initialPropertyPointY2
+- Implemented methods in AbstScratchComponent.java
+		getCurrentLocationX
+		setCurrentLocationX
+		getCurrentLocationY
+		setCurrentLocationY
+
+7/3/12
+- Updated Grammar file to list out the clickable (static) commands. These commands must be listed separately. 
+
+8/27/12
+- Pause/Resume
+
+April 2013
+- Implemented Pause/Resume
+		Myna.java, CommandExecutor.java		
+		Needed to be run in a separate thread.
+- Implemented Parameters
+		Myna.java, CommandExecutor.java, CommandParser.java, defaultCommands.gram, property files
+		Added ability to type a number
+		Needed a return statement at the end of the if set property block in Myna because the call to refreshFrames() removed the focus from the parameter slot
+		Still need to edit the number command to enter multiple digists: Number 123 rather than Number 1, Number 2, Number 3
+		Still need to update all property files with parameters to propertyLength1, propertyLength2, and propertyLength3
+- Implemented Delete
+		Myna.java, CommandExecutor.java, CommandParser.java, defaultCommands.gram
+		Added ability to delete at the end of a list 
+		Added ability to delete in the middle of a list
+			Still need to correct the label issue here
+		Still need to be able to delete if the block is "in" another block
+- Added Help messages
+		Myna.java, CommandExecutor.java, CommandParser.java, ConcreteComponentFactory.java, defaultCommands.gram
+		Error pop-up if microphone doesn't load
+		Information pop-up when Myna stats running
+			Might want to leave up somewhere that voice is active??
+		Help pop-up listing and describing the vocal commands		
+			

@@ -1,0 +1,94 @@
+#JSGF V1.0;
+grammar javax.speech.demo;
+
+
+public <motion> = motion;
+public <looks> = looks;
+public <sound> = sound;
+public <pen> = pen;
+public <control> = control;
+public <sensing> = sensing;
+public <operators> = operators;
+public <variables> = variables;
+
+public <play> = play;
+
+public <click> = click;
+
+public <random> = random;
+
+public <sprite_1> = sprite 1;
+public <sprite_2> = sprite 2;
+public <sprite_3> = sprite 3;
+
+public <pause> = pause;
+public <resume> = resume;
+
+
+public <click_action> = <click> (
+	file | new | open | save as | import project | export sprite | project notes | quit | 
+	edit | undelete | start single stepping | set single stepping | compress sounds | compress images | show meter blocks | 
+	share | share this project online | go to scratch website | 
+	help | help page | help screens | about scratch | 
+	set language | save | share project | 
+	motion | looks | sound | pen | control | sensing | operators | variables | 
+	duplicate sprite | cut sprite | grow sprite | shrink sprite | 
+	small stage | full stage | presentation | 
+	play | stop | 
+	can rotate | face left right | not rotate | rename sprite | lock | 
+	scripts | costumes | sounds | 
+	paint new sprite | new sprite from file | surprise sprite | 
+	stage | 
+	random |  <components>);
+
+public <drag_action> = drag (
+	move steps | Turn Degrees Clockwise | turn degrees counterclockwise | point in direction | point towards | go to x y | go to | glide | change x by | change y by | set x to | set y to | if on edge bounce | x position | y position | direction | 
+	switch costume | next costume | costume number | say for seconds | say | think for | think | change effect | set effect | clear graphic effects | change size | set size | size | show | hide | go to front | go back |
+	play sound | play sound until done | stop all sounds | play drum | rest | play note | set instrument | change volume | set volume | volume | change tempo | set tempo | tempo | 
+	clear | pen down | pen up | set pen color to color | change pen color by | set pen color to number | change pen shade by | set pen shade to | change pen size by | set pen size to | stamp | 
+	when clicked | when key pressed | wait seconds | when key pressed | when sprite clicked | forever | if | repeat | 
+	touching | touching color | color is touching color | ask and wait | answer | mouse x | mouse y | mouse down | key pressed | distance to | reset timer | timer | of | loudness | loud | sensor value | sensor | 
+	add | subtract | multiply | divide | random | less than | equal | greater than | and | or | not | join | letter of | mod | round | function);
+
+public <drag_drop_action> = drag and drop (
+	move steps | Turn Degrees Clockwise | turn degrees counterclockwise | point in direction | point towards | go to x y | go to | glide | change x by | change y by | set x to | set y to | if on edge bounce | x position | y position | direction | 
+	switch costume | next costume | costume number | say for seconds | say | think for | think | change effect | set effect | clear graphic effects | change size | set size | size | show | hide | go to front | go back | 
+	play sound | play sound until done | stop all sounds | play drum | rest | play note | set instrument | change volume | set volume | volume | change tempo | set tempo | tempo | 
+	clear | pen down | pen up | set pen color to color | change pen color by | set pen color to number | change pen shade by | set pen shade to | change pen size by | set pen size to | stamp |   
+	when clicked | when key pressed | wait seconds | when key pressed | when sprite clicked | forever | if | repeat | 
+	touching | touching color | color is touching color | ask and wait | answer | mouse x | mouse y | mouse down | key pressed | distance to | reset timer | timer |  of | loudness | loud | sensor value | sensor | 
+	add | subtract | multiply | divide | random | less than | equal | greater than | and | or | not | join | letter of | mod | round | function); 
+
+
+public <dropAfter> = drop after <components>;
+
+public <scroll> = scroll (editor up | editor down | editor right | editor left | 
+	command up | command down | command right | command left);
+	
+public <set_property1> = edit one at <components>;
+public <set_property2> = edit two at <components>;
+public <set_property3> = edit three at <components>;
+
+public <components> = default;
+
+public <dropBefore> = drop before <components>;
+
+public <dropIn> = drop in <components>;
+
+public <save> = save;
+
+public <okay> = okay;
+
+public <help> = help;
+
+public <done> = done;
+
+public <delete> = delete <components>;
+
+public <number> = number (zero | one | two | three | four | five | six | seven | eight | nine);
+public <letter> = letter (a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z);
+
+
+
+
+
