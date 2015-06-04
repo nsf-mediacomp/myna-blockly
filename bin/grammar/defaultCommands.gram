@@ -39,7 +39,10 @@ public <click_action> = <click> (
 	scripts | costumes | sounds | 
 	paint new sprite | new sprite from file | surprise sprite | 
 	stage | 
-	random |  <components>);
+	random |  <components> |
+	
+	run | reset | select address | connect | disconnect | sleep |
+	sphero events | sphero commands | logic | loops | math | lists | color | functions);
 
 public <drag_action> = drag (
 	move steps | Turn Degrees Clockwise | turn degrees counterclockwise | point in direction | point towards | go to x y | go to | glide | change x by | change y by | set x to | set y to | if on edge bounce | x position | y position | direction | 
@@ -48,7 +51,11 @@ public <drag_action> = drag (
 	clear | pen down | pen up | set pen color to color | change pen color by | set pen color to number | change pen shade by | set pen shade to | change pen size by | set pen size to | stamp | 
 	when clicked | when key pressed | wait seconds | when key pressed | when sprite clicked | forever | if | repeat | 
 	touching | touching color | color is touching color | ask and wait | answer | mouse x | mouse y | mouse down | key pressed | distance to | reset timer | timer | of | loudness | loud | sensor value | sensor | 
-	add | subtract | multiply | divide | random | less than | equal | greater than | and | or | not | join | letter of | mod | round | function);
+	add | subtract | multiply | divide | random | less than | equal | greater than | and | or | not | join | letter of | mod | round | function |
+	
+	change sphero color | change color | sphero roll forward | roll forward| sphero roll forward seconds | roll forward seconds |
+	sphero roll in direction | roll in direction | sphero turn degrees | turn degrees | sphero turn degrees for seconds | turn degree for seconds |
+	sphero stop rolling | stop rolling | set sphero tail LED brightness | set tail LED brightness | calibrate sphero | sphero set speed | set speed);
 
 public <drag_drop_action> = drag and drop (
 	move steps | Turn Degrees Clockwise | turn degrees counterclockwise | point in direction | point towards | go to x y | go to | glide | change x by | change y by | set x to | set y to | if on edge bounce | x position | y position | direction | 
@@ -57,7 +64,12 @@ public <drag_drop_action> = drag and drop (
 	clear | pen down | pen up | set pen color to color | change pen color by | set pen color to number | change pen shade by | set pen shade to | change pen size by | set pen size to | stamp |   
 	when clicked | when key pressed | wait seconds | when key pressed | when sprite clicked | forever | if | repeat | 
 	touching | touching color | color is touching color | ask and wait | answer | mouse x | mouse y | mouse down | key pressed | distance to | reset timer | timer |  of | loudness | loud | sensor value | sensor | 
-	add | subtract | multiply | divide | random | less than | equal | greater than | and | or | not | join | letter of | mod | round | function); 
+	add | subtract | multiply | divide | random | less than | equal | greater than | and | or | not | join | letter of | mod | round | function |
+	
+		
+	change sphero color | change color | sphero roll forward | roll forward| sphero roll forward seconds | roll forward seconds |
+	sphero roll in direction | roll in direction | sphero turn degrees | turn degrees | sphero turn degrees for seconds | turn degree for seconds |
+	sphero stop rolling | stop rolling | set sphero tail LED brightness | set tail LED brightness | calibrate sphero | sphero set speed | set speed); 
 
 
 public <dropAfter> = drop after <components>;
